@@ -1,0 +1,15 @@
+public void search(Query query,
+          Filter filter,
+          Collector results)
+            throws IOException
+Lower-level search API.
+Collector.collect(int) is called for every matching document.
+
+Parameters:
+query - to match documents
+filter - if non-null, used to permit documents to be collected.
+results - to receive hits
+Throws:
+BooleanQuery.TooManyClauses - If a query would exceed BooleanQuery.getMaxClauseCount() clauses.
+IOException
+is

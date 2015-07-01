@@ -1,0 +1,4 @@
+Just a test file.
+
+It will be copied to a new file.
+

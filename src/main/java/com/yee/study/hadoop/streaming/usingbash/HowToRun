@@ -1,0 +1,18 @@
+
+# Path - /Users/RogerYee/MyWork/yee/TechStudy/TechStudy/src/com/yee/study/hadoop/streaming/usingbash
+# Make input/output folder on HDFS
+# hadoop fs -mkdir input
+
+# Delete the output fold in HDFS if it already exists.
+# hadoop fs -rmr output
+
+# Generate the file to be count
+# echo "Hello World Bye World" > file01
+# echo "Hello Hadoop Goodbye Hadoop" > file02
+
+# Upload filed to input folder in HDFS
+hadoop fs -put file0* input
+
+# Run the hadoop to find the file which contains hadoop
+hadoop jar $HADOOP_HOME/contrib/streaming/hadoop-streaming-1.2.1.jar -input input -output output -mapper cat -reducer reducer.sh -file reducer.sh
+

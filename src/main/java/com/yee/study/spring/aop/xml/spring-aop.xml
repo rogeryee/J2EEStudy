@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!-- Aspect定义 -->
+    <aop:config>
+
+        <aop:aspect id="myAspect" ref="sampleAspect">
+
+            <!-- 匹配任何以“sayHello”开头的方法 -->
+            <aop:pointcut id="pointcutSayHello" expression="execution(* sayHello*(..))" />
+
+            <!-- 匹配任何以“sayHi”开头的方法 -->
+            <aop:pointcut id="pointcutSayHi" expression="execution(* sayHi*(..))"/>
+
+            <!-- 在以“sayHello”开头的方法执行之前调用本方法 -->
+            <aop:before method="doBefore" pointcut-ref="pointcutSayHello" />
+
+            <!-- 在以“sayHello”开头的方法执行之前调用本方法，本定义指向了一个用@Pointcut定义的切面以及传入的参数 -->
+            <aop:before method="doBeforeWithArgs"
+                        pointcut="com.yee.study.spring.aop.xml.SampleAspectWithXMLDefinition.pointcutSayHello() and args(lname,..,age)"/>
+
+            <aop:after-returning method="doAfterReturning" pointcut-ref="pointcutSayHello" />
+            <aop:after-returning method="doAfterReturningWithReturning"
+                                 returning="ret"
+                                 pointcut-ref="pointcutSayHello" />
+
+            <aop:after method="doAfter" pointcut-ref="pointcutSayHello"/>
+            <aop:after-throwing method="doAfterThrowing"
+                                throwing="ex"
+                                pointcut-ref="pointcutSayHi"/>
+
+            <aop:around method="doAround" pointcut-ref="pointcutSayHello"/>
+
+        </aop:aspect>
+
+    </aop:config>
+
+    <!-- 需要做AOP操作的SampleBean -->
+    <bean id="sampleBean"
+          class="com.yee.study.spring.aop.xml.SampleBean"/>
+
+    <!-- 需要完成AOP操作的Bean -->
+    <bean id="sampleAspect"
+          class="com.yee.study.spring.aop.xml.SampleAspectWithXMLDefinition"/>
+
+</beans>

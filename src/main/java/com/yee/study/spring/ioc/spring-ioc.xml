@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- 使Spring的Annotation生效 -->
+    <context:annotation-config/>
+
+    <!-- 用SampleBean的默认构造器来生成SampleBean -->
+    <bean id="sampleBeanByConstructor"
+          class="com.yee.study.spring.ioc.SampleBean"/>
+
+    <!-- 用SampleBeanFactory中的静态方法createSampleBean来生成Bean -->
+    <bean id="sampleBeanByStaticFactoryMethod"
+          class="com.yee.study.spring.ioc.SampleBeanFactory"
+          factory-method="createSampleBean"/>
+
+    <!-- 用SampleBeanFactory中的非静态方法createSampleBeanInstance来生成Bean -->
+    <bean id="sampleBeanFactory"
+          class="com.yee.study.spring.ioc.SampleBeanFactory"/>
+
+    <bean id="sampleBeanByFactoryMethod"
+          factory-bean="sampleBeanFactory"
+          factory-method="createSampleBeanInstance"/>
+
+    <!-- String Object -->
+    <bean id="stringBean" class="java.lang.String">
+        <constructor-arg index="0" value="hello world"/>
+    </bean>
+
+    <!-- 使用了@Required标示了stringBean属性 -->
+    <bean id="beanWithRequiredAnnotation" class="com.yee.study.spring.ioc.BeanWithRequiredAnnotation">
+        <property name="stringBean" ref="stringBean"/>
+    </bean>
+
+    <!-- 使用了@Autowired标示了stringBean属性 -->
+    <bean id="beanWithAutowiredAnnotation" class="com.yee.study.spring.ioc.BeanWithAutowiredAnnotation"/>
+
+</beans>
