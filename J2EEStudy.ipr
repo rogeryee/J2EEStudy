@@ -73,7 +73,11 @@
             <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-core:4.1.0.RELEASE" />
             <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.1.0.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-redis:1.5.1.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.0.9.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.9.RELEASE" />
             <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.2" />
+            <element id="library" level="project" name="Maven: redis.clients:jedis:2.7.0" />
           </element>
         </element>
       </root>
@@ -114,6 +118,10 @@
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/README.md" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java/com/yee/study" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/yee/study/redis/spring-redis-config.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/yee/study/spring/aop/xml/spring-aop.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/yee/study/spring/ioc/ioc.properties" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/yee/study/spring/ioc/spring-ioc.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/logback.xml" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/webapp/js_samples" charset="UTF-8" />
   </component>
@@ -1151,6 +1159,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework.data:spring-data-redis:1.5.1.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: org.springframework:spring-aop:4.1.0.RELEASE">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.1.0.RELEASE/spring-aop-4.1.0.RELEASE.jar!/" />
@@ -1171,6 +1190,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.0.RELEASE/spring-beans-4.1.0.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: org.springframework:spring-context-support:4.0.9.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.0.9.RELEASE/spring-context-support-4.0.9.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.0.9.RELEASE/spring-context-support-4.0.9.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/4.0.9.RELEASE/spring-context-support-4.0.9.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.springframework:spring-context:4.1.0.RELEASE">
@@ -1206,6 +1236,17 @@
         <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-expression/4.1.0.RELEASE/spring-expression-4.1.0.RELEASE-sources.jar!/" />
       </SOURCES>
     </library>
+    <library name="Maven: org.springframework:spring-tx:4.0.9.RELEASE">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.9.RELEASE/spring-tx-4.0.9.RELEASE.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.9.RELEASE/spring-tx-4.0.9.RELEASE-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.0.9.RELEASE/spring-tx-4.0.9.RELEASE-sources.jar!/" />
+      </SOURCES>
+    </library>
     <library name="Maven: oro:oro:2.0.8">
       <CLASSES>
         <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
@@ -1215,6 +1256,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: redis.clients:jedis:2.7.0">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.0/jedis-2.7.0.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.0/jedis-2.7.0-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.0/jedis-2.7.0-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: stax:stax-api:1.0.1">

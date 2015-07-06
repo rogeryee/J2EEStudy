@@ -21,11 +21,13 @@
           <file>file://$MODULE_DIR$/src/main/java/com</file>
           <file>file://$MODULE_DIR$/src/main/java/com/yee/study/spring/ioc/spring-ioc.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/yee/study/spring/aop/xml/spring-aop.xml</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/yee/study/redis/spring-redis-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/spring-redis-config.xml</file>
         </fileset>
       </configuration>
     </facet>
   </component>
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_7" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -124,7 +126,11 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-core:4.1.0.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.1.0.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-redis:1.5.1.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.0.9.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.0.9.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.2" level="project" />
+    <orderEntry type="library" name="Maven: redis.clients:jedis:2.7.0" level="project" />
   </component>
 </module>
 

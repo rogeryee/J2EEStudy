@@ -1,5 +1,8 @@
 package com.yee.study;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Roger.Yee
@@ -9,11 +12,15 @@ package com.yee.study;
  */
 public class Test
 {
+    static Logger logger = LoggerFactory.getLogger(Test.class);
+
     public static void main(String [] arg)
     {
-        String a = "ab";
-        String b = "a" + "b";
-        System.out.println(a==b);
+        int x = 4;
+        int y = 5;
+        y = x++;
+
+        logger.debug("y = {}", y);
     }
 }
 

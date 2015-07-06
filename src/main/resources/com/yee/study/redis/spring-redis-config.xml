@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory"
+          p:hostName="localhost"
+          p:port="6379"
+          p:usePool="false" />
+
+    <bean id="redisTemplate"
+          class="org.springframework.data.redis.core.RedisTemplate"
+          p:connectionFactory-ref="jedisConnectionFactory"/>
+
+    <bean id="redisSample" class="com.yee.study.redis.RedisSample">
+        <property name="template" ref="redisTemplate"/>
+    </bean>
+
+</beans>
