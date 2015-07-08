@@ -8,10 +8,9 @@
     <file path="/README.md" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730165622" ignored="false" />
     <file path="/index.jsp" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730232005" ignored="false" />
     <file path="/web.xml" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730251917" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/java/com/yee/study/corejava/nio/NIOServer.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730302055" ignored="false" />
     <file path="/pom.xml" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436155316528" ignored="false" />
     <file path="/AppTest.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435815220079" ignored="false" />
-    <file path="/Test.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436073172597" ignored="false" />
+    <file path="/Test.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436322121083" ignored="false" />
     <file path="/java.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436085586448" ignored="false" />
     <file path="/HelloWorld.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436084885360" ignored="false" />
     <file path="/fragment.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436084945492" ignored="false" />
@@ -31,6 +30,11 @@
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
+  </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
@@ -78,7 +82,17 @@
     <favorites_list name="J2EEStudy" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ReentrantReadWriteLockTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantReadWriteLockTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.9411765">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -88,11 +102,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/yee/AppTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld/java.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java" />
@@ -104,6 +116,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/yee/study/spring/ioc/spring-ioc.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/yee/study/redis/spring-redis-config.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/SortingTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/Test.java" />
       </list>
     </option>
   </component>
@@ -187,7 +201,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -265,8 +278,149 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corejava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corejava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corejava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReentrantReadWriteLockTest.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="J2EEStudy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="study" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="corejava" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="concurrency" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReentrantLockTest.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -285,9 +439,9 @@
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -306,15 +460,15 @@
       <recent name="com.yee.study.redis" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RedisSampleTest">
-    <configuration default="false" name="LogbackHelloWorld" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.ReentrantLockTest">
+    <configuration default="false" name="ExecutorTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yee.study.slf4j.*" />
+          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.slf4j.LogbackHelloWorld" />
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ExecutorTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -329,14 +483,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="ConditionTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yee.study.*" />
+          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ConditionTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -351,14 +505,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="HelloWorld" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="CompletionServiceTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yee.study.redis.*" />
+          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.redis.HelloWorld" />
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.CompletionServiceTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -373,14 +527,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="RedisSampleTest" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="ThreadInterruptTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yee.study.redis.*" />
+          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.redis.RedisSampleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ThreadInterruptTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -395,14 +549,14 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <configuration default="false" name="SampleBeanClient" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="ReentrantLockTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.yee.study.spring.ioc.*" />
+          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.spring.ioc.SampleBeanClient" />
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ReentrantLockTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -453,6 +607,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -479,19 +646,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -622,19 +776,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat_Study" />
-      <item index="1" class="java.lang.String" itemvalue="Application.LogbackHelloWorld" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.HelloWorld" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RedisSampleTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.SampleBeanClient" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ExecutorTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ConditionTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RedisSampleTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.SampleBeanClient" />
-        <item index="2" class="java.lang.String" itemvalue="Application.HelloWorld" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="4" class="java.lang.String" itemvalue="Application.LogbackHelloWorld" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ConditionTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ExecutorTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -652,13 +806,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1260" height="760" extended-state="1" />
-    <editor active="false" />
+    <frame x="4" y="23" width="1260" height="760" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -666,16 +820,16 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2339374" sideWeight="0.484375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32125205" sideWeight="0.5375" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4625" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336079" sideWeight="0.6015625" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -748,303 +902,117 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2.jar!/redis/clients/jedis/Jedis.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ForkJoinTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="769" selection-end="769" vertical-scroll-proportion="0.51986754" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.2/commons-pool2-2.2.jar!/org/apache/commons/pool2/impl/GenericObjectPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="172" selection-end="172" vertical-scroll-proportion="0.10221465" />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2.jar!/redis/clients/jedis/JedisPoolConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="75" selection-start="224" selection-end="224" vertical-scroll-proportion="0.10221465" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="63" selection-start="834" selection-end="844" vertical-scroll-proportion="0.0">
+        <state line="19" column="45" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="uml://MAVEN/com.yee:J2EEStudy:1.0">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>MAVEN</ID>
-          <OriginalElement>com.yee:J2EEStudy:1.0</OriginalElement>
-          <nodes>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-cli:commons-cli:jar:1.2</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-configuration:commons-configuration:jar:1.6</node>
-            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.2</node>
-            <node x="" y="">org.apache.lucene:lucene-analyzers-common:jar:4.9.0</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.codehaus.jackson:jackson-mapper-asl:jar:1.8.8/org.codehaus.jackson:jackson-core-asl:jar:1.8.8</node>
-            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.0/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.0/org.apache.commons:commons-pool2:jar:2.2</node>
-            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.2/org.slf4j:slf4j-api:jar:1.7.6</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/oro:oro:jar:2.0.8</node>
-            <node x="" y="">org.apache.lucene:lucene-analyzers-common:jar:4.9.0/org.apache.lucene:lucene-core:jar:4.9.0</node>
-            <node x="" y="">javax.xml.bind:jaxb-api:jar:2.2.7</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.2.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.3/com.fasterxml.jackson.core:jackson-core:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.apache.commons:commons-math:jar:2.1</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/javax.validation:validation-api:jar:1.1.0.Final</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-el:commons-el:jar:1.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-mapper-asl:jar:1.7.1</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/javax.annotation:javax.annotation-api:jar:1.2</node>
-            <node x="" y="">org.apache.commons:commons-dbcp2:jar:2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-httpclient:commons-httpclient:jar:3.0.1</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.3/com.fasterxml.jackson.core:jackson-databind:jar:2.3.3</node>
-            <node x="" y="">com.lmax:disruptor:jar:3.2.1</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.8</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
-            <node x="" y="">ch.qos.logback:logback-access:jar:1.1.2</node>
-            <node x="" y="">javax.json:javax.json-api:jar:1.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-codec:commons-codec:jar:1.4</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/net.java.dev.jets3t:jets3t:jar:0.6.1</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-api-2.1:jar:6.1.14</node>
-            <node x="" y="">org.apache.lucene:lucene-queryparser:jar:4.9.0/org.apache.lucene:lucene-core:jar:4.9.0</node>
-            <node x="" y="">org.aspectj:aspectjweaver:jar:1.8.2</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/net.java.dev.jets3t:jets3t:jar:0.6.1/commons-codec:commons-codec:jar:1.3</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-context:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.apache.lucene:lucene-queryparser:jar:4.9.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jettison:jettison:jar:1.1/stax:stax-api:jar:1.0.1</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-tx:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.glassfish:javax.json:jar:1.0.4</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jettison:jettison:jar:1.1</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-server:jar:1.8/asm:asm:jar:3.1</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-jaxrs:jar:1.7.1/org.codehaus.jackson:jackson-mapper-asl:jar:1.7.1</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-core:jar:2.3.3</node>
-            <node x="" y="">commons-cli:commons-cli:jar:1.2</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-server:jar:1.8</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-logging:commons-logging:jar:1.1.1</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-2.1:jar:6.1.14</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/hsqldb:hsqldb:jar:1.8.0.10</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-httpclient:commons-httpclient:jar:3.0.1/commons-logging:commons-logging:jar:1.0.3</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-aop:jar:4.1.0.RELEASE/org.springframework:spring-core:jar:4.1.0.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-core-asl:jar:1.7.1</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-aop:jar:4.1.0.RELEASE/aopalliance:aopalliance:jar:1.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-httpclient:commons-httpclient:jar:3.0.1/junit:junit:jar:3.8.1</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-beans:jar:4.1.0.RELEASE/org.springframework:spring-core:jar:4.1.0.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/net.java.dev.jets3t:jets3t:jar:0.6.1/commons-httpclient:commons-httpclient:jar:3.1</node>
-            <node x="" y="">org.slf4j:jcl-over-slf4j:jar:1.7.7/org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/net.java.dev.jets3t:jets3t:jar:0.6.1/commons-logging:commons-logging:jar:1.1.1</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.glassfish.hk2:hk2-utils:jar:2.2.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-core:jar:4.1.0.RELEASE/commons-logging:commons-logging:jar:1.1.3</node>
-            <node x="" y="">org.apache.lucene:lucene-queryparser:jar:4.9.0/org.apache.lucene:lucene-sandbox:jar:4.9.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/org.glassfish.jersey.core:jersey-client:jar:2.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-xc:jar:1.7.1</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-annotations:jar:2.3.3</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-core:jar:1.8</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.core:jackson-databind:jar:2.3.3</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-context-support:jar:4.0.9.RELEASE/org.springframework:spring-beans:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8</node>
-            <node x="" y="">junit:junit:jar:4.11</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-api-2.1:jar:6.1.14/org.mortbay.jetty:servlet-api-2.5:jar:6.1.14</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.jersey.bundles.repackaged:jersey-guava:jar:2.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-jaxrs:jar:1.7.1/org.codehaus.jackson:jackson-core-asl:jar:1.7.1</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-aop:jar:4.1.0.RELEASE/org.springframework:spring-beans:jar:4.1.0.RELEASE</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-server:jar:1.8/com.sun.jersey:jersey-core:jar:1.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/tomcat:jasper-compiler:jar:5.5.12</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jetty:jar:6.1.26</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.glassfish.hk2.external:aopalliance-repackaged:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-aop:jar:4.0.9.RELEASE</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8/commons-beanutils:commons-beanutils:jar:1.7.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0</node>
-            <node x="" y="">org.apache.lucene:lucene-queryparser:jar:4.9.0/org.apache.lucene:lucene-queries:jar:4.9.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-beans:jar:4.1.0.RELEASE</node>
-            <node x="" y="">junit:junit:jar:4.11/org.hamcrest:hamcrest-core:jar:1.3</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.core:jackson-core:jar:2.3.3</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-aop:jar:4.1.0.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0/org.glassfish.hk2:hk2-utils:jar:2.2.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/org.glassfish.hk2:hk2-api:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jetty-util:jar:6.1.26</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.2.3/commons-beanutils:commons-beanutils:jar:1.8.3</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-expression:jar:4.1.0.RELEASE</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-collections:commons-collections:jar:3.2.1</node>
-            <node x="" y="">org.apache.lucene:lucene-core:jar:4.9.0</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.8/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-tx:jar:4.0.9.RELEASE/org.springframework:spring-beans:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-common:jar:2.8/org.glassfish.hk2:osgi-resource-locator:jar:1.0.1</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.module:jackson-module-jaxb-annotations:jar:2.3.3/com.fasterxml.jackson.core:jackson-databind:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-2.1:jar:6.1.14/org.eclipse.jdt:core:jar:3.1.1</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-net:commons-net:jar:1.4.1/oro:oro:jar:2.0.8</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.2.3</node>
-            <node x="" y="">ch.qos.logback:logback-classic:jar:1.1.2/ch.qos.logback:logback-core:jar:1.1.2</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-2.1:jar:6.1.14/ant:ant:jar:1.6.5</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8/commons-logging:commons-logging:jar:1.1</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/com.sun.xml.bind:jaxb-impl:jar:2.2.3-1/javax.xml.bind:jaxb-api:jar:2.2.2</node>
-            <node x="" y="">ch.qos.logback:logback-access:jar:1.1.2/ch.qos.logback:logback-core:jar:1.1.2</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-lang:commons-lang:jar:2.4</node>
-            <node x="" y="">javax.servlet:javax.servlet-api:jar:3.1.0</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.3.3/com.fasterxml.jackson.core:jackson-core:jar:2.3.3</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-expression:jar:4.1.0.RELEASE/org.springframework:spring-core:jar:4.1.0.RELEASE</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-digester:commons-digester:jar:1.8</node>
-            <node x="" y="">com.fasterxml.jackson.core:jackson-databind:jar:2.3.3/com.fasterxml.jackson.core:jackson-annotations:jar:2.3.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-xc:jar:1.7.1/org.codehaus.jackson:jackson-mapper-asl:jar:1.7.1</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-net:commons-net:jar:1.4.1</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-jaxrs:jar:1.7.1</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-context-support:jar:4.0.9.RELEASE/org.springframework:spring-core:jar:4.0.9.RELEASE</node>
-            <node x="" y="">ch.qos.logback:logback-core:jar:1.1.2</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/org.codehaus.jackson:jackson-xc:jar:1.7.1/org.codehaus.jackson:jackson-core-asl:jar:1.7.1</node>
-            <node x="" y="">com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:jar:2.3.3/com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:jar:2.3.3/com.fasterxml.jackson.core:jackson-core:jar:2.3.3</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/com.sun.jersey:jersey-json:jar:1.8/com.sun.jersey:jersey-core:jar:1.8</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-io:commons-io:jar:2.1</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-context-support:jar:4.0.9.RELEASE/org.springframework:spring-context:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-el:commons-el:jar:1.0/commons-logging:commons-logging:jar:1.0.3</node>
-            <node x="" y="">org.postgresql:postgresql:jar:9.3-1101-jdbc41</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.containers:jersey-container-servlet-core:jar:2.8/javax.ws.rs:javax.ws.rs-api:jar:2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/tomcat:jasper-runtime:jar:5.5.12</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-tx:jar:4.0.9.RELEASE/org.springframework:spring-core:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
-            <node x="" y="">com.yee:J2EEStudy:1.0</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2.external:javax.inject:jar:2.2.0</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/commons-httpclient:commons-httpclient:jar:3.0.1/commons-codec:commons-codec:jar:1.2</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-beanutils:commons-beanutils-core:jar:1.8.0/commons-logging:commons-logging:jar:1.1.1</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.slf4j:slf4j-api:jar:1.7.10</node>
-            <node x="" y="">org.slf4j:jcl-over-slf4j:jar:1.7.7</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-context-support:jar:4.0.9.RELEASE</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/xmlenc:xmlenc:jar:0.52</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE/org.springframework:spring-core:jar:4.0.9.RELEASE</node>
-            <node x="" y="">commons-lang:commons-lang:jar:2.4</node>
-            <node x="" y="">org.glassfish.jersey.core:jersey-client:jar:2.8/org.glassfish.hk2:hk2-locator:jar:2.2.0/org.javassist:javassist:jar:3.18.1-GA</node>
-            <node x="" y="">org.springframework.data:spring-data-redis:jar:1.5.1.RELEASE</node>
-            <node x="" y="">commons-configuration:commons-configuration:jar:1.6/commons-beanutils:commons-beanutils-core:jar:1.8.0</node>
-            <node x="" y="">org.springframework:spring-context:jar:4.1.0.RELEASE/org.springframework:spring-core:jar:4.1.0.RELEASE</node>
-            <node x="" y="">org.slf4j:slf4j-api:jar:1.7.7</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.eclipse.jdt:core:jar:3.1.1</node>
-            <node x="" y="">org.apache.shiro:shiro-core:jar:1.2.3/org.slf4j:slf4j-api:jar:1.6.4</node>
-            <node x="" y="">org.apache.hadoop:hadoop-core:jar:1.2.1/org.mortbay.jetty:jsp-2.1:jar:6.1.14/org.mortbay.jetty:jsp-api-2.1:jar:6.1.14</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8</node>
-            <node x="" y="">org.glassfish.jersey.containers:jersey-container-servlet:jar:2.8/org.glassfish.jersey.core:jersey-server:jar:2.8/javax.annotation:javax.annotation-api:jar:1.2</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.1121756487025948" x="402.0" y="2495.0" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>All</VISIBILITY>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="1" selection-start="854" selection-end="1497" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE-sources.jar!/org/springframework/data/redis/connection/jredis/JredisConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/DynamicProxySample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="29" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.38927335">
+        <state line="11" column="13" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/CollectionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.21498372">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/VolatileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="23" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#628#750#0" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.0.0.RELEASE/spring-data-redis-1.0.0.RELEASE.jar!/org/springframework/data/redis/connection/jredis/JredisConnection.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ConditionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="-2.4">
+        <state line="96" column="41" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/CompletionServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="21" selection-start="351" selection-end="351" vertical-scroll-proportion="0.31946754">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE-sources.jar!/org/springframework/data/redis/core/RedisTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="961" column="23" selection-start="30962" selection-end="30970" vertical-scroll-proportion="0.5072464">
+        <state line="27" column="30" selection-start="853" selection-end="856" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/spring/ioc/SampleBeanClient.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/FutureTaskTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="26" selection-start="1125" selection-end="1125" vertical-scroll-proportion="0.6666667">
+        <state line="4" column="13" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/yee/study/spring/ioc/spring-ioc.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="4" selection-start="615" selection-end="615" vertical-scroll-proportion="0.13461539">
+        <state line="5" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="225" column="81" selection-start="7159" selection-end="7159" vertical-scroll-proportion="0.6594324">
+        <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/RedisSampleTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="32" selection-start="339" selection-end="339" vertical-scroll-proportion="0.26043406">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/RedisSample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="691" selection-end="691" vertical-scroll-proportion="0.5882353">
+        <state line="8" column="13" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/yee/study/redis/spring-redis-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ThreadInterruptTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="564" selection-end="564" vertical-scroll-proportion="0.22036728">
+        <state line="18" column="24" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-redis/1.5.1.RELEASE/spring-data-redis-1.5.1.RELEASE-sources.jar!/org/springframework/data/redis/connection/jedis/JedisConnectionFactory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/WaitNotifyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="251" column="0" selection-start="8365" selection-end="8365" vertical-scroll-proportion="0.16861436">
+        <state line="2" column="13" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="34" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantReadWriteLockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.9411765">
           <folding />
         </state>
       </provider>

@@ -80,7 +80,8 @@ public class SortingTest
     /**
      * 快速排序，时间复杂度
      * O(nlogn)，最坏时间复杂度O(n2)，平均时间复杂度
-     * O(nlogn)，算法不具稳定性     * @param src
+     * O(nlogn)，算法不具稳定性
+     * @param src
      * @param begin
      * @param end
      */
@@ -165,7 +166,9 @@ public class SortingTest
 
     /**
      * 归并排序算法，稳定排序，非原地排序，空间复杂度O(n)，时间复杂度
-     * O(nlogn)   * @param a   * @param low
+     * O(nlogn)
+     * @param a
+     * @param low
      * @param high
      */
     public static void mergeSort(int a[], int low, int high)
