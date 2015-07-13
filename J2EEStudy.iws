@@ -5,19 +5,21 @@
     <ignored path="J2EEStudy.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435729742948" ignored="false" />
-    <file path="/README.md" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730165622" ignored="false" />
+    <file path="/README.md" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436420334572" ignored="false" />
     <file path="/index.jsp" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730232005" ignored="false" />
     <file path="/web.xml" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435730251917" ignored="false" />
     <file path="/pom.xml" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436155316528" ignored="false" />
     <file path="/AppTest.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1435815220079" ignored="false" />
     <file path="/Test.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436322121083" ignored="false" />
     <file path="/java.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436085586448" ignored="false" />
-    <file path="/HelloWorld.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436084885360" ignored="false" />
+    <file path="/HelloWorld.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436777058730" ignored="false" />
     <file path="/fragment.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436084945492" ignored="false" />
     <file path="/JedistPoolSample.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436086749973" ignored="false" />
     <file path="/spring-redis-config.xml" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436152492647" ignored="false" />
     <file path="/RedisSample.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436149523729" ignored="false" />
     <file path="/RedisSampleTest.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436149751347" ignored="false" />
+    <file path="/EuclideanFilter.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436420064699" ignored="false" />
+    <file path="/JedisPoolSample.java" changelist="219ce96d-50aa-4e1d-a53c-0034ef212e93" time="1436778187916" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,10 +85,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ReentrantReadWriteLockTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantReadWriteLockTest.java">
+      <file leaf-file-name="HelloWorld.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.9411765">
+            <state line="14" column="4" selection-start="284" selection-end="357" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JedisPoolSample.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/JedisPoolSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="82" column="42" selection-start="1735" selection-end="1735" vertical-scroll-proportion="1.6078432">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisSample.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/RedisSample.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="229" column="21" selection-start="6977" selection-end="7285" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,12 +135,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/com/yee/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld/java.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/JedistPoolSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/RedisSample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/spring-redis-config.xml" />
@@ -118,6 +147,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/SortingTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yee/study/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/cf/EuclideanFilter.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yee/study/redis/JedisPoolSample.java" />
       </list>
     </option>
   </component>
@@ -168,7 +201,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="4" />
+    <option name="x" value="13" />
     <option name="y" value="23" />
     <option name="width" value="1260" />
     <option name="height" value="760" />
@@ -304,118 +337,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="corejava" />
+              <option name="myItemId" value="redis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corejava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corejava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ReentrantReadWriteLockTest.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="J2EEStudy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="study" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="corejava" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="concurrency" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ReentrantLockTest.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -460,51 +383,7 @@
       <recent name="com.yee.study.redis" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReentrantLockTest">
-    <configuration default="false" name="ExecutorTest" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ExecutorTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="J2EEStudy" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="ConditionTest" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.yee.study.corejava.concurrency.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ConditionTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="J2EEStudy" />
-      <envs />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.JedisPoolSample">
     <configuration default="false" name="CompletionServiceTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -557,6 +436,50 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.yee.study.corejava.concurrency.ReentrantLockTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="J2EEStudy" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EuclideanFilter" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yee.study.cf.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.cf.EuclideanFilter" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="J2EEStudy" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="JedisPoolSample" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.yee.study.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.yee.study.redis.JedisPoolSample" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -776,19 +699,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Tomcat_Study" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ExecutorTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ConditionTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EuclideanFilter" />
+      <item index="5" class="java.lang.String" itemvalue="Application.JedisPoolSample" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ConditionTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ExecutorTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.JedisPoolSample" />
+        <item index="1" class="java.lang.String" itemvalue="Application.EuclideanFilter" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ReentrantLockTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.ThreadInterruptTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CompletionServiceTest" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -806,7 +729,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="23" width="1260" height="760" extended-state="0" />
+    <frame x="13" y="23" width="1260" height="760" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -820,7 +743,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265625" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32554516" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -828,8 +751,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2339374" sideWeight="0.484375" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32866043" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336079" sideWeight="0.6015625" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3984375" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3336079" sideWeight="0.48125" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.51875" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -902,118 +825,118 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ForkJoinTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantReadWriteLockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="45" selection-start="656" selection-end="656" vertical-scroll-proportion="0.0">
+        <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="0.019543974" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/Timeout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="18" selection-start="311" selection-end="311" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/ITimeoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="1" selection-start="854" selection-end="1497" vertical-scroll-proportion="0.0">
+        <state line="5" column="17" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/DynamicProxySample.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/Factory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0">
+        <state line="7" column="13" selection-start="115" selection-end="115" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/core/CollectionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/TimeoutTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="228" selection-end="228" vertical-scroll-proportion="0.21498372">
+        <state line="7" column="13" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/VolatileTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/TimeoutMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="26" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+        <state line="9" column="13" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ExecutorTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/TimeoutMethodHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="23" selection-start="608" selection-end="608" vertical-scroll-proportion="0.0">
+        <state line="10" column="13" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/utilites/timeout/TimeoutMethodScanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="441" selection-end="441" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/hadoop/streaming/usingbash/HowToRun">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="270" column="35" selection-start="7569" selection-end="7569" vertical-scroll-proportion="-13.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/cf/EuclideanFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="29" selection-start="58" selection-end="80" vertical-scroll-proportion="0.019543974">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/RedisSample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="229" column="21" selection-start="6977" selection-end="7285" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.0/jedis-2.7.0.jar!/redis/clients/jedis/JedisPool.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="12" selection-start="627" selection-end="627" vertical-scroll-proportion="0.2934028">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/HelloWorld.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="4" selection-start="284" selection-end="357" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="e#628#750#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ConditionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/redis/JedisPoolSample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="41" selection-start="1758" selection-end="1758" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/CompletionServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="30" selection-start="853" selection-end="856" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/FutureTaskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="111" selection-end="111" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ProducerConsumerTest3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="13" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ThreadInterruptTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="24" selection-start="380" selection-end="380" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/WaitNotifyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="34" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yee/study/corejava/concurrency/ReentrantReadWriteLockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="13" selection-start="191" selection-end="191" vertical-scroll-proportion="-0.9411765">
-          <folding />
+        <state line="82" column="42" selection-start="1735" selection-end="1735" vertical-scroll-proportion="1.6078432">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
