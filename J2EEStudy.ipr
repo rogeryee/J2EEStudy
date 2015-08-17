@@ -10,7 +10,6 @@
     <artifact type="exploded-war" name="J2EEStudy:war exploded">
       <output-path>$PROJECT_DIR$/target/J2EEStudy</output-path>
       <root id="root">
-        <element id="javaee-facet-resources" facet="J2EEStudy/web/Web" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="classes">
             <element id="module-output" name="J2EEStudy" />
@@ -22,11 +21,10 @@
             <element id="library" level="project" name="Maven: commons-cli:commons-cli:1.2" />
             <element id="library" level="project" name="Maven: commons-configuration:commons-configuration:1.6" />
             <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
-            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
             <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
             <element id="library" level="project" name="Maven: commons-digester:commons-digester:1.8" />
-            <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
             <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils-core:1.8.0" />
+            <element id="library" level="project" name="Maven: commons-lang:commons-lang:2.4" />
             <element id="library" level="project" name="Maven: org.apache.commons:commons-dbcp2:2.0" />
             <element id="library" level="project" name="Maven: org.apache.commons:commons-pool2:2.2" />
             <element id="library" level="project" name="Maven: javax.json:javax.json-api:1.0" />
@@ -34,22 +32,22 @@
             <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0" />
             <element id="library" level="project" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet:2.8" />
             <element id="library" level="project" name="Maven: org.glassfish.jersey.containers:jersey-container-servlet-core:2.8" />
-            <element id="library" level="project" name="Maven: org.glassfish.hk2.external:javax.inject:2.2.0" />
-            <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-server:2.8" />
             <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.8" />
             <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
             <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.8" />
+            <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
+            <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-server:2.8" />
+            <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
+            <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.8" />
             <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.2.0" />
             <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.2.0" />
             <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.2.0" />
+            <element id="library" level="project" name="Maven: org.glassfish.hk2.external:javax.inject:2.2.0" />
             <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-locator:2.2.0" />
             <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.1-GA" />
-            <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
-            <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.8" />
-            <element id="library" level="project" name="Maven: javax.validation:validation-api:1.1.0.Final" />
             <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.3.3" />
-            <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.3" />
             <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-core:2.3.3" />
+            <element id="library" level="project" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.3.3" />
             <element id="library" level="project" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.3.3" />
             <element id="library" level="project" name="Maven: com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.3.3" />
             <element id="library" level="project" name="Maven: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.3.3" />
@@ -60,6 +58,7 @@
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.1.2" />
             <element id="library" level="project" name="Maven: ch.qos.logback:logback-access:1.1.2" />
             <element id="library" level="project" name="Maven: org.apache.shiro:shiro-core:1.2.3" />
+            <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.3" />
             <element id="library" level="project" name="Maven: org.postgresql:postgresql:9.3-1101-jdbc41" />
             <element id="library" level="project" name="Maven: com.lmax:disruptor:3.2.1" />
             <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:4.9.0" />
@@ -78,8 +77,13 @@
             <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.0.9.RELEASE" />
             <element id="library" level="project" name="Maven: org.aspectj:aspectjweaver:1.8.2" />
             <element id="library" level="project" name="Maven: redis.clients:jedis:2.7.0" />
+            <element id="library" level="project" name="Maven: com.rabbitmq:amqp-client:3.5.4" />
           </element>
         </element>
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/target/J2EEStudy/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="javaee-facet-resources" facet="J2EEStudy/web/Web" />
       </root>
     </artifact>
   </component>
@@ -108,10 +112,11 @@
         <module name="J2EEStudy" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="1.7">
+      <module name="J2EEStudy" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="DependencyValidationManager">
     <option name="SKIP_IMPORT_STATEMENTS" value="false" />
   </component>
@@ -130,6 +135,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
+    <type id="Spring" />
   </component>
   <component name="IdProvider" IDEtalkID="094D73386C7F327E591783F71C698158" />
   <component name="MavenProjectsManager">
@@ -265,7 +271,7 @@
       <module fileurl="file://$PROJECT_DIR$/J2EEStudy.iml" filepath="$PROJECT_DIR$/J2EEStudy.iml" />
     </modules>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -431,6 +437,17 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$MAVEN_REPOSITORY$/com/lmax/disruptor/3.2.1/disruptor-3.2.1-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="Maven: com.rabbitmq:amqp-client:3.5.4">
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.5.4/amqp-client-3.5.4.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.5.4/amqp-client-3.5.4-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/rabbitmq/amqp-client/3.5.4/amqp-client-3.5.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.sun.jersey:jersey-core:1.8">
@@ -1315,4 +1332,3 @@
     </library>
   </component>
 </project>
-
