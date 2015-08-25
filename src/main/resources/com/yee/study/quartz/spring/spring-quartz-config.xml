@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- SpringJob 配置，指明调用的Class和Method -->
+    <bean id="springJob" class="com.yee.study.quartz.spring.SpringJob"></bean>
+    <bean name="cronTrigger1" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail">
+            <bean class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+                <property name="concurrent">
+                    <value>false</value>
+                </property>
+                <property name="targetObject">
+                    <ref bean="springJob" />
+                </property>
+                <property name="targetMethod">
+                    <value>run</value>
+                </property>
+            </bean>
+        </property>
+        <property name="cronExpression">
+            <value>0/10 * * * * ?</value>
+        </property>
+    </bean>
+
+    <!-- SpringJob2 配置，该bean直接继承了Spring的QuartzJobBean，所以不需要指定调用的class和method -->
+    <bean name="springJobExtendsQuartzBean" class="org.springframework.scheduling.quartz.JobDetailFactoryBean">
+        <property name="jobClass" value="com.yee.study.quartz.spring.SpringJob2" />
+        <property name="durability" value="true" />
+    </bean>
+    <bean name="cronTrigger2" class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="jobDetail" ref="springJobExtendsQuartzBean"/>
+        <property name="cronExpression">
+            <value>0/5 * * * * ?</value>
+        </property>
+    </bean>
+
+    <bean id="startQuertz"
+          class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="cronTrigger1"/>
+                <ref bean="cronTrigger2"/>
+            </list>
+        </property>
+    </bean>
+
+</beans>

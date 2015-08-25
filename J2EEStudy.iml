@@ -23,6 +23,7 @@
           <file>file://$MODULE_DIR$/src/main/java/com/yee/study/spring/aop/xml/spring-aop.xml</file>
           <file>file://$MODULE_DIR$/src/main/java/com/yee/study/redis/spring-redis-config.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring-redis-config.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/com/yee/study/quartz/spring/spring-quartz-config.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -132,5 +133,8 @@
     <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.8.2" level="project" />
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.7.0" level="project" />
     <orderEntry type="library" name="Maven: com.rabbitmq:amqp-client:3.5.4" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:5.0.0.Alpha2" level="project" />
+    <orderEntry type="library" name="Maven: org.quartz-scheduler:quartz:2.2.1" level="project" />
+    <orderEntry type="library" name="Maven: c3p0:c3p0:0.9.1.1" level="project" />
   </component>
 </module>

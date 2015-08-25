@@ -273,6 +273,49 @@
 	#### com.yee.study.cf.EuclideanFilter ####
     使用了欧几里德距离算法完成协同过滤的用户推荐
 
+
+###########################
+########## Redis ##########
+###########################
+
+	#### com.yee.study.reids.HelloWorld ####
+    展示了使用Jedis来操作Redis库的示例
+
+    #### com.yee.study.reids.RedisSampleTest ####
+    展示了使用Spring＋Jedis来操作Redis库的示例
+
+    #### com.yee.study.reids.JedisPoolSample ####
+    展示了使用JedisPool来操作Redis库的示例
+
+
+##############################
+########## RabbitMQ ##########
+##############################
+
+	#### com.yee.study.rabbitmq.helloworld ####
+    展示了使用rabbitmq完成客户、服务端发送简单消息的示例
+
+    #### com.yee.study.rabbitmq.workqueue ####
+    展示了使用rabbitmq完成工作队列的示例
+
+    #### com.yee.study.rabbitmq.subandpub ####
+    展示了使用rabbitmq完成订阅/发布的示例
+
+    #### com.yee.study.rabbitmq.rpc ####
+    展示了使用rabbitmq完成rpc调用的示例
+
+
+############################
+########## Quartz ##########
+############################
+
+	#### com.yee.study.quartz.helloworld ####
+    展示了使用java代码来完成任务调度的示例。
+
+    #### com.yee.study.quartz.spring.SpringJobTest ####
+    展示了使Spring+Quartz框架的示例，例子中包含了2个Job（一个是简单的Bean，一个是继承Spring的QuartzJobBean）
+
+
 ######################
 ##### Utilities ######
 ######################
