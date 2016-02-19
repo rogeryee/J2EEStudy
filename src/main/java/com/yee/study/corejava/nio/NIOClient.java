@@ -32,6 +32,7 @@ public class NIOClient
 
         // 打开选择器，注册连接服务端socket动作
         Selector selector = Selector.open();
+        System.out.println("NIOClient : selector = " + selector);
         socketChannel.register(selector, SelectionKey.OP_CONNECT);
         socketChannel.connect(SERVER_ADDRESS);
 

@@ -34,6 +34,7 @@ public class NIOServer
 
         // 通过open()方法找到Selector
         this.selector = Selector.open();
+        System.out.println("NIOServer : selector = " + selector);
 
         // 注册到selector，等待连接
         serverSocketChannel.register(this.selector, SelectionKey.OP_ACCEPT);
