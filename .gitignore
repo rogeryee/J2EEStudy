@@ -7,3 +7,7 @@
 target
 build
 bin
+*.iml
+*.idea/*
+*.ipr
+*.iws
