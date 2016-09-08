@@ -17,9 +17,10 @@ public class ReceiveLogs
         factory.setHost("localhost");
         Connection connection = factory.newConnection();
         Channel channel = connection.createChannel();
-
         channel.exchangeDeclare(EXCHANGE_NAME, "fanout");
+
         String queueName = channel.queueDeclare().getQueue();
+        String routingKey = "";
         channel.queueBind(queueName, EXCHANGE_NAME, "");
 
         System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
