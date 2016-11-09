@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions id="definitions" targetNamespace="http://activiti.org/bpmn20"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+    <process id="helloworld" name="Hello World sample">
+
+        <startEvent id="start" />
+        <sequenceFlow id='flow1' sourceRef='start' targetRef='manualAudit' />
+        <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='autoAudit' />
+        <sequenceFlow id='flow3' sourceRef='autoAudit' targetRef='end' />
+        <endEvent id="end" />
+
+        <userTask id="manualAudit" name="Manual Audit" >
+            <potentialOwner>
+                <resourceAssignmentExpression>
+                    <formalExpression>sales</formalExpression>
+                </resourceAssignmentExpression>
+            </potentialOwner>
+        </userTask>
+
+        <serviceTask id="autoAudit"
+                     name="AutoAudit"
+                     activiti:class="com.yee.study.activiti.hello.HelloService"/>
+
+    </process>
+
+</definitions>
