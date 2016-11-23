@@ -6,9 +6,10 @@
     <process id="helloworld" name="Hello World sample">
 
         <startEvent id="start" />
-        <sequenceFlow id='flow1' sourceRef='start' targetRef='manualAudit' />
-        <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='autoAudit' />
-        <sequenceFlow id='flow3' sourceRef='autoAudit' targetRef='end' />
+        <sequenceFlow id='flow1' sourceRef='start' targetRef='customTask' />
+        <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='customTask' />
+        <sequenceFlow id='flow3' sourceRef='customTask' targetRef='autoAudit' />
+        <sequenceFlow id='flow4' sourceRef='autoAudit' targetRef='end' />
         <endEvent id="end" />
 
         <userTask id="manualAudit" name="Manual Audit" >
@@ -18,6 +19,15 @@
                 </resourceAssignmentExpression>
             </potentialOwner>
         </userTask>
+
+        <serviceTask id="customTask"
+                     name="CustomTask"
+                     activiti:type="ti-lnk">
+            <extensionElements>
+                <activiti:field name="serviceInterface" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
+                <activiti:field name="methodName" stringValue="helloWorld"/>
+            </extensionElements>
+        </serviceTask>
 
         <serviceTask id="autoAudit"
                      name="AutoAudit"

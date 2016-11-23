@@ -1,5 +1,6 @@
 package com.yee.study.activiti.hello;
 
+import me.andpay.ti.lnk.api.LnkClientContextAccessor;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
@@ -14,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -41,14 +43,14 @@ public class HelloWorldTest
     @Test
     public void testDeleteDeployment()
     {
-        repositoryService.deleteDeployment("37501", true);
+        repositoryService.deleteDeployment("152501", true);
     }
 
     @Test
     public void testHelloWorld()
     {
         // 部署流程定义
-        repositoryService.createDeployment().addClasspathResource("activiti/bpmn/helloworld.bpmn20.xml").deploy();
+//        repositoryService.createDeployment().addClasspathResource("activiti/bpmn/helloworld.bpmn20.xml").deploy();
 
         // 启动流程实例
         String procId = runtimeService.startProcessInstanceByKey("helloworld").getId();
@@ -77,22 +79,6 @@ public class HelloWorldTest
         // 现在fozzie的可执行任务数就为0了
         logger.info("Number of tasks for fozzie: "
                 + taskService.createTaskQuery().taskAssignee("fozzie").count());
-
-//        // 获得第二个任务
-//        tasks = taskService.createTaskQuery().taskCandidateGroup("management").list();
-//        for (Task task : tasks)
-//        {
-//            logger.info("Following task is available for accountancy group:" + task.getName());
-//
-//            // 认领任务这里由kermit认领，因为kermit是management组的成员
-//            taskService.claim(task.getId(), "kermit");
-//        }
-//
-//        // 完成第二个任务结束流程
-//        for (Task task : tasks)
-//        {
-//            taskService.complete(task.getId());
-//        }
 
         // 核实流程是否结束,输出流程结束时间
         HistoricProcessInstance historicProcessInstance = historyService.createHistoricProcessInstanceQuery()
