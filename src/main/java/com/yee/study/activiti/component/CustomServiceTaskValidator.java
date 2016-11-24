@@ -19,7 +19,7 @@ public class CustomServiceTaskValidator extends ServiceTaskValidator {
 		    		&& !serviceTask.getType().equalsIgnoreCase("mule")
 		    		&& !serviceTask.getType().equalsIgnoreCase("camel")
 		    		&& !serviceTask.getType().equalsIgnoreCase("shell")
-		    		&& !serviceTask.getType().equalsIgnoreCase("ti-lnk")
+		    		&& !serviceTask.getType().equalsIgnoreCase(ServiceTaskTypes.MY_TASK)
 		    ) {
 		    	addError(errors, Problems.SERVICE_TASK_INVALID_TYPE, process, serviceTask, "Invalid or unsupported service task type");
 		    }

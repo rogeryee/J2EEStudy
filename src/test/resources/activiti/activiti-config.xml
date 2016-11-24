@@ -1,108 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:ti-lnk="http://www.andpay.me/schema/ti/ti-lnk"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
-		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.andpay.me/schema/ti/ti-lnk http://www.andpay.me/schema/ti/ti-lnk/ti-lnk-1.1.0.xsd">
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
 	<context:annotation-config />
 
 	<aop:aspectj-autoproxy />
-
-    <!-- ti-lnk 配置 -->
-    <bean class="me.andpay.ti.config.ns.NsRegistryImpl">
-        <property name="nsHome" value="/Users/RogerYee/.ns_config" />
-    </bean>
-
-    <ti-lnk:rpc id="andpay_client.Rpc"  lookup-file="/Users/RogerYee/lookup">
-        <ti-lnk:transport-amqp-server qserver-id="'/amqp/queue'" />
-        <ti-lnk:rpc-server server-id="defaultLnkServer" concurrent="3">
-            <ti-lnk:listen-addresses>
-                <ti-lnk:amqp-address qserver-id="'/amqp/queue'" queue="andpay-client.srv-queue"/>
-            </ti-lnk:listen-addresses>
-            <ti-lnk:bind>
-                <ti-lnk:service-group>andpay-client.srv</ti-lnk:service-group>
-            </ti-lnk:bind>
-        </ti-lnk:rpc-server>
-    </ti-lnk:rpc>
-
-    <!-- 数据源 -->
-    <bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
-        <property name="driverClass" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/roger?autoReconnect=true" />
-        <property name="username" value="root" />
-        <property name="password" value="root" />
-    </bean>
-
-    <!-- 事务配置 -->
-    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
-        <property name="sessionFactory" ref="sessionFactory" />
-    </bean>
-
-    <!-- 使用annotation定义事务 -->
-    <tx:annotation-driven transaction-manager="transactionManager" proxy-target-class="true" />
-
-    <!-- SessionFactory -->
-    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
-        <property name="dataSource" ref="dataSource" />
-        <property name="namingStrategy">
-            <bean class="org.hibernate.cfg.ImprovedNamingStrategy" />
-        </property>
-        <property name="hibernateProperties">
-            <props>
-                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
-                <prop key="hibernate.show_sql">false</prop>
-                <prop key="hibernate.format_sql">true</prop>
-            </props>
-        </property>
-        <property name="packagesToScan" value="com.yee.study" />
-    </bean>
 
 	<bean id="processEngineConfiguration" class="org.activiti.spring.SpringProcessEngineConfiguration">
 		<property name="dataSource" ref="dataSource" />
 		<property name="databaseType" value="mysql" />
 		<property name="transactionManager" ref="transactionManager" />
 		<property name="jobExecutorActivate" value="true" />
-		<!-- <property name="asyncExecutorEnabled" value="true" />
-		<property name="asyncExecutorActivate" value="true" /> -->
 		<property name="databaseSchemaUpdate" value="false" />
 		<property name="activityBehaviorFactory">
 			<ref bean="customActivityBehaviorFactory" />
 		</property>
-		<!--<property name="idGenerator" ref="uuidGenerator" />-->
 		<property name="customDefaultBpmnParseHandlers">
 			<list>
 				<ref bean="customServiceTaskParseHandler" />
 			</list>
 		</property>
-		<!--<property name="customMybatisXMLMappers">-->
-			<!--<list>-->
-				<!--<value>activiti/Job.xml</value>-->
-				<!--<value>activiti/Execution.xml</value>-->
-			<!--</list>-->
-		<!--</property>-->
 		<property name="processValidator">
 			<bean class="com.yee.study.activiti.component.CustomProcessValidator" />
 		</property>
-		<!--<property name="customSessionFactories">-->
-			<!--<list>-->
-				<!--<bean class="me.andpay.ac.lrcs.workflow.components.CustomJobEntitySessionFactory" />-->
-				<!--<bean class="me.andpay.ac.lrcs.workflow.components.CustomExecutionEntityFactory" />-->
-			<!--</list>-->
-		<!--</property>-->
-		<!--<property name="jobExecutor">-->
-			<!--<ref bean="customJobExecutor" />-->
-		<!--</property>-->
 	</bean>	
 	
 	<bean id="processEngineFactory" class="org.activiti.spring.ProcessEngineFactoryBean">
 		<property name="processEngineConfiguration" ref="processEngineConfiguration"></property>
 	</bean>
 	
-	<!--<bean id="customJobExecutor" class="me.andpay.ac.lrcs.workflow.components.CustomJobExecutor" />-->
-	<!--<bean id="uuidGenerator" class="org.activiti.engine.impl.persistence.StrongUuidGenerator" />-->
 	<bean id="repositoryService" factory-bean="processEngineFactory" factory-method="getRepositoryService" />
 	<bean id="runtimeService" factory-bean="processEngineFactory" factory-method="getRuntimeService" />
 	<bean id="taskService" factory-bean="processEngineFactory" factory-method="getTaskService" />
@@ -113,14 +43,7 @@
 	<bean id="customServiceTaskParseHandler" class="com.yee.study.activiti.component.CustomServiceTaskParseHandler" />
 	<bean id="customActivityBehaviorFactory" class="com.yee.study.activiti.component.ActivityBehaviorFactory"/>
 
+    <!-- 自定义serviceTask -->
     <bean id="tiLnkServiceTask" class="com.yee.study.activiti.component.task.TiLnkServiceTask" />
-
-    <bean id="LnkServiceCaller" class="com.yee.study.activiti.component.task.LnkServiceCallerImpl"/>
-
-    <bean id="LnkSrvCallbackImpl" class="com.yee.study.activiti.hello.LnkSrvCallbackImpl"/>
-
-	<!--<bean id="processEventListener" class="me.andpay.ac.lrcs.workflow.services.ProcessEventListener" />-->
-	<!--<bean id="ac-lrcs-workflow.WorkflowService" class="me.andpay.ac.lrcs.workflow.services.WorkflowServiceImpl" />-->
-	<!--<bean id="ac-lrcs-workflow.WorkflowAdminService" class="me.andpay.ac.lrcs.workflow.services.WorkflowAdminServiceImpl" />-->
 
 </beans>

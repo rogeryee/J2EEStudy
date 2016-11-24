@@ -1,4 +1,4 @@
-package com.yee.study.activiti.hello;
+package com.yee.study.activiti;
 
 import com.yee.andpay.demo.api.tilnk.callback.CallbackResult;
 import com.yee.andpay.demo.api.tilnk.callback.LnkSrvCallback;

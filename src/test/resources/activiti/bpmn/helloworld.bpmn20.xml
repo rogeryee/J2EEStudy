@@ -3,15 +3,16 @@
              xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
              xmlns:activiti="http://activiti.org/bpmn">
 
+    <!-- 定义了一个简单的审核流程(开始 -> 人工审核 -> 自动审核 -> 结束) -->
     <process id="helloworld" name="Hello World sample">
 
         <startEvent id="start" />
-        <sequenceFlow id='flow1' sourceRef='start' targetRef='customTask' />
-        <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='customTask' />
-        <sequenceFlow id='flow3' sourceRef='customTask' targetRef='autoAudit' />
+        <sequenceFlow id='flow1' sourceRef='start' targetRef='manualAudit' />
+        <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='autoAudit' />
         <sequenceFlow id='flow4' sourceRef='autoAudit' targetRef='end' />
         <endEvent id="end" />
 
+        <!-- 人工审核 -->
         <userTask id="manualAudit" name="Manual Audit" >
             <potentialOwner>
                 <resourceAssignmentExpression>
@@ -20,18 +21,10 @@
             </potentialOwner>
         </userTask>
 
-        <serviceTask id="customTask"
-                     name="CustomTask"
-                     activiti:type="ti-lnk">
-            <extensionElements>
-                <activiti:field name="serviceInterface" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
-                <activiti:field name="methodName" stringValue="helloWorld"/>
-            </extensionElements>
-        </serviceTask>
-
+        <!-- 自动审核 -->
         <serviceTask id="autoAudit"
                      name="AutoAudit"
-                     activiti:class="com.yee.study.activiti.hello.HelloService"/>
+                     activiti:class="com.yee.study.activiti.helloworld.HelloService"/>
 
     </process>
 

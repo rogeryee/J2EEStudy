@@ -1,6 +1,5 @@
 package com.yee.study.activiti.component;
 
-import com.yee.study.activiti.ServiceTaskTypes;
 import org.activiti.bpmn.constants.BpmnXMLConstants;
 import org.activiti.bpmn.model.BaseElement;
 import org.activiti.bpmn.model.DataAssociation;
@@ -54,7 +53,7 @@ public class CustomServiceTaskParseHandler extends AbstractExternalInvocationBpm
 				activity.setActivityBehavior(
 						bpmnParse.getActivityBehaviorFactory().createShellActivityBehavior(serviceTask));
 
-			} else if (serviceTask.getType().equalsIgnoreCase(ServiceTaskTypes.TI_LNK_TASK)) {
+			} else if (serviceTask.getType().equalsIgnoreCase(ServiceTaskTypes.MY_TASK)) {
 				activity.setActivityBehavior(activitiBehaviorFactory.createTiLnkServiceTaskBehavior(serviceTask));
 			} else {
 				logger.warn("Invalid service task type: '" + serviceTask.getType() + "' " + " for service task "

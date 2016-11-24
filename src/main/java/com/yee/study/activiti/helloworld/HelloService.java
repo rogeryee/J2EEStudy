@@ -1,4 +1,4 @@
-package com.yee.study.activiti.hello;
+package com.yee.study.activiti.helloworld;
 
 import org.activiti.engine.delegate.DelegateExecution;
 import org.activiti.engine.delegate.JavaDelegate;
@@ -16,6 +16,6 @@ public class HelloService implements JavaDelegate
     @Override
     public void execute(DelegateExecution execution) throws Exception
     {
-        logger.info("Hello Service " + this.toString() + "Is Saying Hello To Every One !");
+        logger.info("Hello Service " + this.toString() + " is Saying Hello To Every One !");
     }
 }

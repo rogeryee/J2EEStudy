@@ -39,5 +39,43 @@ public class StringTest
         d1.intern();
         String d2 = "d";
         System.out.println(d1 == d2); // False
+
+        System.out.println("---------------");
+
+        String s = "s-ab";
+        int i = 1;
+        StringBuffer sb = new StringBuffer("sb-ab");
+        TestObj obj = new TestObj("Roger", 12);
+        change(s,i,sb,obj);
+
+        System.out.println("s = " + s);
+        System.out.println("i = " + i);
+        System.out.println("sb = " + sb.toString());
+        System.out.println("obj : " + obj.name + ", " + obj.age);
+    }
+
+    public static void change(String s, int i, StringBuffer sb, TestObj obj)
+    {
+        s = "s-cd";
+        i = 3;
+        sb.append("cd");
+
+        obj.name = "Jack";
+        obj.age = 100;
+        sb = new StringBuffer("new sb");
+        obj = new TestObj("Phoebe", 22);
+    }
+}
+
+class TestObj
+{
+    public String name;
+
+    public int age;
+
+    public TestObj(String name, int age)
+    {
+        this.name = name;
+        this.age = age;
     }
 }

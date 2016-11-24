@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<definitions id="definitions" targetNamespace="http://activiti.org/bpmn20"
+             xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL"
+             xmlns:activiti="http://activiti.org/bpmn">
+
+<process id="customizedTask" name="Customized Task sample">
+
+    <startEvent id="start" />
+    <sequenceFlow id='flow1' sourceRef='start' targetRef='customTask' />
+    <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='customTask' />
+    <sequenceFlow id='flow3' sourceRef='customTask' targetRef='autoAudit' />
+    <sequenceFlow id='flow4' sourceRef='autoAudit' targetRef='end' />
+    <endEvent id="end" />
+
+    <userTask id="manualAudit" name="Manual Audit" >
+        <potentialOwner>
+            <resourceAssignmentExpression>
+                <formalExpression>sales</formalExpression>
+            </resourceAssignmentExpression>
+        </potentialOwner>
+    </userTask>
+
+    <serviceTask id="customTask"
+                 name="CustomTask"
+                 activiti:type="ti-lnk">
+        <extensionElements>
+            <activiti:field name="serviceInterface" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
+            <activiti:field name="methodName" stringValue="helloWorld"/>
+        </extensionElements>
+    </serviceTask>
+
+    <serviceTask id="autoAudit"
+                 name="AutoAudit"
+                 activiti:class="com.yee.study.activiti.helloworld.HelloService"/>
+
+</process>
+
+</definitions>

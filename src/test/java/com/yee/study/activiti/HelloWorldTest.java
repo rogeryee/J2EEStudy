@@ -1,6 +1,5 @@
-package com.yee.study.activiti.hello;
+package com.yee.study.activiti;
 
-import me.andpay.ti.lnk.api.LnkClientContextAccessor;
 import org.activiti.engine.HistoryService;
 import org.activiti.engine.RepositoryService;
 import org.activiti.engine.RuntimeService;
@@ -15,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,7 +21,7 @@ import java.util.List;
  * Create: 11/9/16
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration("classpath:activiti/activiti-config.xml")
+@ContextConfiguration("classpath:activiti/spring-config.xml")
 public class HelloWorldTest
 {
     private static final Logger logger = LoggerFactory.getLogger(HelloWorldTest.class);
@@ -41,16 +39,10 @@ public class HelloWorldTest
     private HistoryService historyService;
 
     @Test
-    public void testDeleteDeployment()
-    {
-        repositoryService.deleteDeployment("152501", true);
-    }
-
-    @Test
     public void testHelloWorld()
     {
         // 部署流程定义
-//        repositoryService.createDeployment().addClasspathResource("activiti/bpmn/helloworld.bpmn20.xml").deploy();
+        repositoryService.createDeployment().addClasspathResource("activiti/bpmn/helloworld.bpmn20.xml").deploy();
 
         // 启动流程实例
         String procId = runtimeService.startProcessInstanceByKey("helloworld").getId();
@@ -59,7 +51,6 @@ public class HelloWorldTest
         List<Task> tasks = taskService.createTaskQuery().taskCandidateGroup("sales").list();
         for (Task task : tasks)
         {
-
             logger.info("Following task is available for sales group: " + task.getName());
 
             // 认领任务这里由foozie认领，因为fozzie是sales组的成员

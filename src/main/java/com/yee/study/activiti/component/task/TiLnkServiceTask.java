@@ -4,7 +4,7 @@ import com.yee.andpay.demo.api.tilnk.callback.LnkServiceCallee;
 import com.yee.andpay.demo.api.tilnk.callback.LnkSrvCallback;
 import com.yee.andpay.demo.api.tilnk.hello.HelloWorldRespHandler;
 import com.yee.andpay.demo.api.tilnk.hello.HelloWorldResponse;
-import com.yee.study.activiti.hello.LnkSrvCallbackImpl;
+import com.yee.study.activiti.LnkSrvCallbackImpl;
 import me.andpay.ti.lnk.annotaion.Lnkwired;
 import me.andpay.ti.lnk.api.LnkClientContextAccessor;
 import org.activiti.engine.impl.bpmn.behavior.TaskActivityBehavior;
