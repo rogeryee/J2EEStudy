@@ -14,4 +14,6 @@
 
     <import resource="classpath:activiti/activiti-config.xml"/>
 
+    <bean id="CustomTaskHandler" class="com.yee.study.activiti.custom.CustomTaskHandler"/>
+
 </beans>

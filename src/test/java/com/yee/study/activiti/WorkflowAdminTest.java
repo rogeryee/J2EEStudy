@@ -46,7 +46,7 @@ public class WorkflowAdminTest
     @Test
     public void testDeleteDeployment()
     {
-        repositoryService.deleteDeployment("162501", true);
+        repositoryService.deleteDeployment("272501", true);
     }
 
     /**

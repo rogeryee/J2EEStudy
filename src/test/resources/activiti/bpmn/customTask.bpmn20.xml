@@ -14,7 +14,7 @@
                  name="CustomTask"
                  activiti:type="my-task">
         <extensionElements>
-            <activiti:field name="className" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
+            <activiti:field name="className" stringValue="com.yee.study.activiti.custom.CustomTaskHandler"/>
         </extensionElements>
     </serviceTask>
 
