@@ -7,31 +7,16 @@
 
     <startEvent id="start" />
     <sequenceFlow id='flow1' sourceRef='start' targetRef='customTask' />
-    <sequenceFlow id='flow2' sourceRef='manualAudit' targetRef='customTask' />
-    <sequenceFlow id='flow3' sourceRef='customTask' targetRef='autoAudit' />
-    <sequenceFlow id='flow4' sourceRef='autoAudit' targetRef='end' />
+    <sequenceFlow id='flow4' sourceRef='customTask' targetRef='end' />
     <endEvent id="end" />
-
-    <userTask id="manualAudit" name="Manual Audit" >
-        <potentialOwner>
-            <resourceAssignmentExpression>
-                <formalExpression>sales</formalExpression>
-            </resourceAssignmentExpression>
-        </potentialOwner>
-    </userTask>
 
     <serviceTask id="customTask"
                  name="CustomTask"
-                 activiti:type="ti-lnk">
+                 activiti:type="my-task">
         <extensionElements>
-            <activiti:field name="serviceInterface" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
-            <activiti:field name="methodName" stringValue="helloWorld"/>
+            <activiti:field name="className" stringValue="com.yee.andpay.demo.api.tilnk.hello.HelloWorldService"/>
         </extensionElements>
     </serviceTask>
-
-    <serviceTask id="autoAudit"
-                 name="AutoAudit"
-                 activiti:class="com.yee.study.activiti.helloworld.HelloService"/>
 
 </process>
 

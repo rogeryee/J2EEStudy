@@ -44,6 +44,6 @@
 	<bean id="customActivityBehaviorFactory" class="com.yee.study.activiti.component.ActivityBehaviorFactory"/>
 
     <!-- 自定义serviceTask -->
-    <bean id="tiLnkServiceTask" class="com.yee.study.activiti.component.task.TiLnkServiceTask" />
+    <bean id="MyServiceTask" class="com.yee.study.activiti.component.task.MyServiceTask" />
 
 </beans>

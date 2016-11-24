@@ -17,16 +17,14 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import java.util.List;
 
 /**
- * 流程管理测试
- *
  * Author: RogerYee
  * Create: 11/9/16
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:activiti/spring-config.xml")
-public class WorkflowAdminTest
+public class CustomServiceTaskTest
 {
-    private static final Logger logger = LoggerFactory.getLogger(WorkflowAdminTest.class);
+    private static final Logger logger = LoggerFactory.getLogger(CustomServiceTaskTest.class);
 
     @Autowired
     private RepositoryService repositoryService;
@@ -40,21 +38,14 @@ public class WorkflowAdminTest
     @Autowired
     private HistoryService historyService;
 
-    /**
-     * 删除已发布的流程
-     */
     @Test
-    public void testDeleteDeployment()
+    public void testCustomTask()
     {
-        repositoryService.deleteDeployment("162501", true);
-    }
+        // 部署流程定义
+//        repositoryService.createDeployment().addClasspathResource("activiti/bpmn/customTask.bpmn20.xml").deploy();
 
-    /**
-     * 删除任务
-     */
-    @Test
-    public void testDeleteExecution()
-    {
-        runtimeService.deleteProcessInstance("272504", "Rollback");
+        // 启动流程实例
+        String procId = runtimeService.startProcessInstanceByKey("customizedTask").getId();
+        logger.info("Process instance Id: " + procId);
     }
 }
