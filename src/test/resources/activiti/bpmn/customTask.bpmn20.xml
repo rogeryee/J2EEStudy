@@ -14,7 +14,7 @@
                  name="CustomTask"
                  activiti:type="my-task">
         <extensionElements>
-            <activiti:field name="className" stringValue="com.yee.study.activiti.custom.CustomTaskHandler"/>
+            <activiti:field name="className" stringValue="com.yee.study.activiti.custom.CustomTaskHandlerImpl"/>
         </extensionElements>
     </serviceTask>
 

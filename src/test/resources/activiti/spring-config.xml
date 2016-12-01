@@ -10,10 +10,16 @@
 
 	<aop:aspectj-autoproxy />
 
+    <!-- 引用外部配置 -->
     <import resource="classpath:activiti/database-config.xml"/>
 
     <import resource="classpath:activiti/activiti-config.xml"/>
 
-    <bean id="CustomTaskHandler" class="com.yee.study.activiti.custom.CustomTaskHandler"/>
+    <!-- Beans -->
+    <bean id="CustomTaskHandler" class="com.yee.study.activiti.custom.CustomTaskHandlerImpl"/>
+
+    <bean id="MockService" class="com.yee.study.activiti.custom.MockService"/>
+
+    <bean id="WorkflowContext" class="com.yee.study.activiti.custom.WorkflowContext"/>
 
 </beans>

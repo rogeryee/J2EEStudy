@@ -20,6 +20,13 @@ public class Test
         BigDecimal number = new BigDecimal(0.00050);
 
         System.out.println(percentage(number.doubleValue(), 2));
+
+        TestObj obj = new TestObj();
+        obj.setCount(1);
+
+        int count = 1;
+        obj.setCount(++count);
+        System.out.println(obj.getCount());
     }
 
     public static String percentage(double num, int scale)
@@ -31,6 +38,21 @@ public class Test
         df.setRoundingMode(RoundingMode.HALF_UP);
         double accuracy_num = num * 100;
         return df.format(accuracy_num) + "%";
+    }
+}
+
+class TestObj
+{
+    private int count;
+
+    public int getCount()
+    {
+        return count;
+    }
+
+    public void setCount(int count)
+    {
+        this.count = count;
     }
 }
 

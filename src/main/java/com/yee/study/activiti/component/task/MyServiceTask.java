@@ -1,5 +1,6 @@
 package com.yee.study.activiti.component.task;
 
+import com.yee.study.activiti.custom.CustomTaskHandler;
 import org.activiti.engine.impl.bpmn.behavior.TaskActivityBehavior;
 import org.activiti.engine.impl.el.FixedValue;
 import org.activiti.engine.impl.pvm.delegate.ActivityExecution;
@@ -27,7 +28,7 @@ public class MyServiceTask extends TaskActivityBehavior implements ApplicationCo
     {
 		logger.debug("receive data prepared signal executionId [{}] businessKey [{}] signalName [{}] signalData [{}]",
 				execution.getId(), execution.getProcessBusinessKey(), signalName, signalData);
-		execute(execution);
+        resume(execution);
 	}
 
 	@Override
@@ -38,11 +39,29 @@ public class MyServiceTask extends TaskActivityBehavior implements ApplicationCo
         logger.info("className = " + className.getExpressionText());
 
         Class clazz = Class.forName(className.getExpressionText());
-        Object object = applicationContext.getBean(clazz);
+        CustomTaskHandler object = (CustomTaskHandler)applicationContext.getBean(clazz);
+
+        execution.setVariable("myTaskKey", "myTaskValue");
+
+        object.doExecute(execution);
 
         leave(execution);
 		logger.info("MyServiceTask executed.");
 	}
+
+    public void resume(final ActivityExecution execution) throws Exception
+    {
+        logger.info("Resume execution : id = " + execution.getId() + ", instId = " + execution.getProcessInstanceId());
+
+        logger.info("className = " + className.getExpressionText());
+
+        Class clazz = Class.forName(className.getExpressionText());
+        CustomTaskHandler object = (CustomTaskHandler)applicationContext.getBean(clazz);
+
+        object.doResume(execution);
+        leave(execution);
+        logger.info("MyServiceTask resumed.");
+    }
 
     // Getters and Setters
     public FixedValue getClassName()

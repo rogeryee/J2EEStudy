@@ -34,12 +34,6 @@ public class WorkflowAdminTest
     @Autowired
     private RuntimeService runtimeService;
 
-    @Autowired
-    private TaskService taskService;
-
-    @Autowired
-    private HistoryService historyService;
-
     /**
      * 删除已发布的流程
      */
@@ -55,6 +49,6 @@ public class WorkflowAdminTest
     @Test
     public void testDeleteExecution()
     {
-        runtimeService.deleteProcessInstance("272504", "Rollback");
+        runtimeService.deleteProcessInstance("310001", "Rollback");
     }
 }
