@@ -19,6 +19,19 @@
 	
 	#### this_test.html ####
 	介绍：本例列举了javascript中"this"关键字使用的例子
+
+
+#################
+### Activiti ###
+#################
+
+    Base : activiti
+
+	#### HelloWorldTest.java ####
+	介绍：本例展示了基础的Activiti使用的测试例子
+
+	#### CustomServiceTaskTest.java ####
+	介绍：本例展示了如何自定义serviceTask的使用的例子
 	
 	
 ##################
@@ -48,20 +61,6 @@
 	这样只有添加了@Logged注释的方法才会触发Filter
 
 	注意：在pom.xml中将hadoop1.2.1的dependency设置为provided，这样打包时不会用到hadoop1.2.1相关的jar包，否则会导致jersey的servlet无法正常启动。
-	
-##################
-####  SLF4J    ### 
-##################
-
-	#### HelloWorld.java ####
-	介绍：本例采用了SLF4J的框架+SLF4J-Simple实现了简单的日志输出.
-	注意：确保classpath下只有 SLF4J-Simple的jar，而无logback的jar包，否则SLF4J会自动加载其中任一个。
-	
-	
-	#### LogbackHelloWorld.java ####
-	介绍：本例采用了SLF4J的框架+logback实现了简单的日志输出	
-	注意：确保classpath下只有 logback的jar，而无SLF4J-Simple的jar包，否则SLF4J会自动加载其中任一个。
-
 
 ##################
 ####  Shiro    ### 
@@ -103,6 +102,8 @@
 #####################
 ####  Concurrency ### 
 #####################
+
+    Base: corejava/concurrency
 
 	#### ThreadInterruptTest.java ####	
 	展示了如何使用Thread.interrupt()方法以及子线程如何使用Thread.isInterrupted()方法来判断当前线程的状态
@@ -162,6 +163,8 @@
 #######   NIO  ######
 #####################
 
+    Base: corejava/nio
+
 	#### CopyFile.java ####
 	展示了如何使用Channel和Buffer来读写文件
 
@@ -171,6 +174,8 @@
 #####################
 #######   Core  ######
 #####################
+
+    Base: corejava/core
 
 	#### AutoCloseSample.java ####
 	展示了如何使用试用JDK7中AutoCloseable接口
@@ -219,13 +224,6 @@
 
     #### designpattern/adapter ####
     适配器模式的使用
-
-######################
-####### JUnit ########
-######################
-
-	#### CalculatorTest.java ####
-	展示了一个最基础的使用JUnit4的例子
 
 
 ######################
@@ -314,6 +312,17 @@
 
     #### com.yee.study.quartz.spring.SpringJobTest ####
     展示了使Spring+Quartz框架的示例，例子中包含了2个Job（一个是简单的Bean，一个是继承Spring的QuartzJobBean）
+
+
+############################
+########## Parser ##########
+############################
+
+	#### JSONPathSample ####
+    展示了使用jsonpath类解析json数据的示例。
+
+    #### JxpathSample ####
+    展示了使用Jxpath操作Java Bean的示例.
 
 
 ######################
