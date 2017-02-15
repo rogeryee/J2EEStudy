@@ -242,11 +242,17 @@
             <version>3.5.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit</artifactId>
+            <version>1.6.5.RELEASE</version>
+        </dependency>
+
         <!-- Netty -->
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>5.0.0.Alpha2</version>
+            <version>5.0.0.Alpha1</version>
         </dependency>
 
         <!-- Quartz -->
@@ -289,45 +295,6 @@
             <groupId>org.activiti</groupId>
             <artifactId>activiti-spring</artifactId>
             <version>5.21.0</version>
-        </dependency>
-
-        <!-- ti-lnk -->
-        <dependency>
-            <groupId>me.andpay.ti.ti-lnk</groupId>
-            <artifactId>ti-lnk-spring</artifactId>
-            <version>1.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>me.andpay.ti.ti-srv-config</groupId>
-            <artifactId>ti-srv-config-ctx</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>me.andpay.ti</groupId>
-            <artifactId>ti-util</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>me.andpay.ti.ti-lnk</groupId>
-            <artifactId>ti-lnk-api</artifactId>
-            <version>1.1.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>me.andpay.ti</groupId>
-            <artifactId>ti-srv-util</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>me.andpay.ac.ac-cif</groupId>
-            <artifactId>ac-cif-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.yee</groupId>
-            <artifactId>andpay-example-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
         </dependency>
 
     </dependencies>

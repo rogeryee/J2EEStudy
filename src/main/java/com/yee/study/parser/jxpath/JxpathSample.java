@@ -11,7 +11,7 @@ import java.util.Iterator;
  * Author: RogerYee
  * Create: 10/25/16
  */
-public class JXPathSample
+public class JxpathSample
 {
     public static void main(String[] args)
     {

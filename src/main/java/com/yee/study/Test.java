@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +20,12 @@ public class Test
 
     public static void main(String[] args)
     {
+        new HashSet<>();
+        List<String> list = new ArrayList<>();
+        list.add("1");
+        list.add(null);
+        list.add("2");
+
         BigDecimal number = new BigDecimal(0.00050);
 
         System.out.println(percentage(number.doubleValue(), 2));
@@ -27,6 +36,11 @@ public class Test
         int count = 1;
         obj.setCount(++count);
         System.out.println(obj.getCount());
+
+        String companyTelNumber = "085128264681";
+        companyTelNumber = companyTelNumber.replaceAll("[^\\d]", "");
+        boolean matches = companyTelNumber.matches("\\d{11,}");
+        System.out.println("matches : " + matches);
     }
 
     public static String percentage(double num, int scale)
